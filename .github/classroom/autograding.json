@@ -1,0 +1,44 @@
+{
+    "tests": [
+    {
+        "name": "lcs compiles",
+        "setup": "",
+        "run": "timeout 30 make -f test.mk make-lcs",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 5
+    },
+    {
+        "name": "sim compiles",
+        "setup": "",
+        "run": "timeout 30 make -f test.mk make-sim",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 5
+    },
+    {
+        "name": "lcs runs correctly",
+        "setup": "",
+        "run": "timeout 20 make -f test.mk test-lcs",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 30
+    },
+    {
+        "name": "sim runs correctly",
+        "setup": "",
+        "run": "timeout 20 make -f test.mk test-sim",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 30
+    }
+    ]
+}
